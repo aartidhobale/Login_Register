@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <style type="text/css">
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+        body{
+            padding-top: 150px;
+            padding-bottom: 100px;
+            background: powderblue;
+        }
+     .validateForm{
+        margin: 0 auto;
+        max-width: 400px;
+        background-color: white;
+        padding: 15px;
+        box-shadow: 3px 6px 100px pink;
+     }
+
+     .validateForm h2{
+        text-align: center;
+     }
+    </style> 
+
+   <!---- <Script > 
+           function checkPassword() {
+             let password = document.getElementById("password").value;
+             let confirmPassword = document.getElementById("confirmPassword").value;
+
+             console.log(password,confirmPassword);
+             let message = document.getElementById("message")
+
+             if(password.length != 0)
+ 
+             if (password == confirmPassword) {
+                message.textContent = "passwords match";
+                message.style.backgroundColor = "#3ae374";
+             }
+             else{
+                message.textContent = "These passwords do not match";
+                message.style.backgroundColor = "#ff4d4d";
+             }
+           }  
+           
+   </Script>  ---->
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="validateForm">
+          <h2>Register Form</h2>
+          <br>
+          <div class="form-group">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <input type="text" name="firstname" class="form-control" placeholder="First Name">
+                </div>
+                <br>
+
+                <div class="col-md-6">
+                    <input type="text" name="lastname" class="form-control" placeholder="Last Name">
+                </div>
+            </div>
+        </div>
+     <br>
+
+          <div class="form-group">
+            <input type="email" name="email" class="form-control" placeholder="Email Address">
+          </div>
+        <br>
+
+          <div class="form-group">
+            <input type="Phone Number" name="Phone Number" class="form-control" placeholder="Phone Number">
+          </div>
+       <br>
+
+          <div class="form-group">
+            <input type="passsword" name="password" class="form-control" placeholder="Password">
+          </div>
+       <br>
+
+          <div class="form-group">
+            <input type="confirmPassword" class="form-control" name="confirmPassword" placeholder="Confirm_Password">
+          </div>
+       <br>
+
+          <!--<div class="form-group">
+            <label>
+                <input type="checkbox" name="">
+                I accept the <a href="#">Terms of use</a> &  <a href="#">Privacy Policy</a>
+            </label>
+          </div>-->
+
+        <input type="Register" class="btn btn-success btn-block" name="" value="Register">
+    </form>
+  </div>
+<script src="script.js"> </script>
+</body>
+</html>
