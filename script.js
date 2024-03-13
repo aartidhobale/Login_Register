@@ -15,7 +15,4 @@ function checkPassword() {
        message.textContent = "These passwords do not match";
        message.style.backgroundColor = "#ff4d4d";
     }
-  }  
-
-
- 
+}  
