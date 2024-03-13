@@ -12,11 +12,6 @@
         margin: 0;
         padding: 0;
       }
-        body{
-            padding-top: 150px;
-            padding-bottom: 100px;
-            background: powderblue;
-        }
      .validateForm{
         margin: 0 auto;
         max-width: 400px;
@@ -57,7 +52,34 @@
 </head>
 
 <body>
-    <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Form</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>   
+    <div class="container mt-5 shadow p-5">
         <form class="validateForm" action="login.html">
             <h2>Register Form</h2>
             <br>
@@ -92,6 +114,7 @@
             <div id="message"></div>
             <br>
             <input type="submit" onclick="checkPassword()" class="btn btn-success btn-block" name="Reg Button" value="Register">
+            <p class="pt-3">Already have an account? <a href="login.html">Login here</a></p>
         </form>
     </div>
 </body>
